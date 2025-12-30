@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: voiceswap-server
+    runtime: node
+    buildCommand: npm install
+    startCommand: node index.js
+    envVars:
+      - key: PORT
+        value: 5000
